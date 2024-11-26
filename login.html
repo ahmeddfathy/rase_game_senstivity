@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <style>
+     @media (min-width:280px) and (max-width:1400px){
+        #cir{
+            
+            height: 90vw !important;
+            width:90vw !important;
+            position: absolute;
+            right: -40vw !important;
+            top: -2vh;
+            
+        }
+     }
+   
+     input:focus{
+        border: none;
+        outline: none;
+        caret-color: white;
+       
+     }
+   input{
+   color:#00FF7A;
+   }
+
+   @media (min-width:768px) and (max-width:1400px){
+     .pra{
+        font-size: 25px;
+     }
+     input[type = "submit"]{
+        font-size: 25px;
+     }
+   }
+ 
+   @media (min-width:1024px) and (max-width:1600px){
+    .circ_down{
+        width:9vw !important;
+        height: 9vw !important;
+       
+       
+    }
+    #cir{
+            
+        height: 38vw !important;
+        width:38vw !important;
+        position: absolute;
+        right: -20vw !important;
+     
+        top: -6vh;
+        
+    }
+    #card1{
+        width: 60vw !important;
+     
+    }
+    input{
+        width: 50vh !important;
+        
+    }
+    #card2{
+        width: 40vw !important;
+    }
+    input[type = "submit"]{
+        font-size: 20px !important;
+     }
+  }
+
+     @media (min-width:280px) and (max-width:360px){
+        .create{
+            font-size: 15px !important;
+        }
+        *{
+            font-size: 12px !important;  
+        }
+        #card1{
+            margin-top: 30px !important;
+        }
+     }
+
+     @media (min-width:280px) and (max-width:768px){
+        #card1{
+            margin-top: 30px !important;
+        }
+     }
+    
+     @media (min-width:768px) and (max-width:912px){
+        .logo{
+         margin-top: -8vh !important;
+        }
+        #card1{
+         margin: 6vh auto !important;
+
+        }
+    
+    
+    }
+    </style>
+</head>
+<body style="height: 100vh;  background-color: #271E1E; overflow-y: hidden; ">
+
+    <section>
+
+        <div class="container-fluid" >
+            <div class="row" style="height:100vh; background-color: #271E1E;" >
+             
+                 <div class="col-12" style=" overflow-x: hidden; position: relative;">
+                    <div style=" width: 40px;
+                     text-align: center; height:30px; color: #271E1E;  margin-top: 3vh; margin-bottom: 3vh; display: flex ; align-items: center;
+                     justify-content: center;">
+                     <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="30" height="29" rx="6" fill="#FEFEFE"/>
+                        <path d="M17 20.3701L11.4882 15.2783C10.8373 14.677 10.8373 13.693 11.4882 13.0917L17 8" stroke="#292D32" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                    </div>
+                  
+           
+                    <div style="width: 50vw; height: 50vw; border-radius: 50%; background-color: rgb(0,255,123); float: right;
+                    border: none; outline: none; color: red; text-align: center;  " id="cir">
+             
+                    </div>
+             
+                    <div style="margin: 0;">
+                        <img src="20230829_020449 1.png " class="logo" alt="" style="float: right; position: relative; z-index: 5; margin-top: -10vh;">
+                    </div>
+
+                    <div style="width: 92vw; background-color: rgb(253,253,253); margin: 10px auto; border-radius: 20px; min-height: 65vh;
+                    max-height:fit-content;
+                    position: relative; display: flex; flex-direction: column;
+                    z-index: 3;" id="card1">
+                   
+                        <h1 style=" text-align: center; margin: 0 auto; width: fit-content; position: relative; top:5vh;" class="create">Create User</h1>
+                   
+                   
+<!-- card2 -->
+                     <div style="background-color: #00FF7A; border-top-left-radius: 40px; width: 80vw; min-height: 38vh;
+                     max-height: fit-content;   
+                      border-bottom-right-radius: 40px; margin: 11vh auto 0; position: relative; display: flex; flex-direction: column; justify-content: center;
+                      " id="card2">
+                      
+                  <form action="" method="POSt">
+                      <p class="pra" style="text-align: center; text-transform: uppercase; font-weight: bold; margin-bottom: 1vh; ">user name</p>
+                 
+                      <div style=" display: flex; justify-content: center;" >
+                        <input  type="text" style="background-color: #005E2D; width: 60vw;
+                         border: none; border-radius: 40px; margin: 10px auto ; height: 4vh;">
+                      </div>
+                 
+                    
+                      <div class="pra" style="text-align: center; text-transform: uppercase; font-weight: bold; margin-bottom: 1vh; ">password</div>
+                      <div style=" display: flex; justify-content: center;" >
+                        <input  type="text" style="background-color: #005E2D; width: 60vw;
+                         border: none; border-radius: 40px; margin: 10px auto ; height: 4vh;">
+                      </div>
+                   
+
+                      <div style=" display: flex; justify-content: center; margin-top: 2vh;" >
+                        <input  type="submit" value="submit" style="background-color: rgb(40,30,29); color: rgb(234,228,228); width: 30vw;
+                         border: none; border-radius: 12px; margin: 10px auto ; height: 5vh;">
+                      </div>
+                    </form>
+
+                     </div>
+              
+
+                   
+        </div>
+      
+    </div>  
+</div>
+</div>
+<div style="background-color: #00FF7A; height: 10vh; position: absolute; bottom: 0; width: 100%; padding: 0;
+ margin: 0; border-top-right-radius: 20px; border-top-left-radius: 20px; display: flex; justify-content: space-evenly; align-items: center; ">
+ <div>
+ <img src="icons8-setting.svg" alt="" style="width: 40px; height: 40px;">
+</div>
+<div style="width: 25vw; height: 25vw; background-color: #271E1E; border-radius: 50%; margin-bottom: 10vh; display: flex;
+align-items: center; justify-content: center; " class="circ_down">
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+    <path d="M36.9655 9.87751L25.1693 1.61505C21.954 -0.640206 17.0184 -0.517192 13.9261 1.88159L3.66584 9.89801C1.61788 11.4972 0 14.7776 0 17.3608V31.5074C0 36.7355 4.23927 41 9.46155 41H31.5384C36.7607 41 41 36.756 41 31.5279V17.6273C41 14.8596 39.2183 11.4562 36.9655 9.87751ZM22.0359 32.7991C22.0359 33.6397 21.3396 34.3367 20.5 34.3367C19.6603 34.3367 18.964 33.6397 18.964 32.7991V26.6483C18.964 25.8077 19.6603 25.1107 20.5 25.1107C21.3396 25.1107 22.0359 25.8077 22.0359 26.6483V32.7991Z" fill="white"/>
+  </svg>
+</div>
+<div>
+ <img src="R (1).png" alt="" style="width: 40px; height: 40px;">
+</div>
+ 
+
+</div>  
+    </section>
+    <script src="bootstrap-5.3.0-dist/js/all.js"></script>
+    <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
